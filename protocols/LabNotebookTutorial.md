@@ -14,7 +14,7 @@ author: Sophi Samus
 First, make sure you can access the command line through your computer's terminal. If you have a Mac, all you have to do is open the Terminal app.
 If you have a PC, you will need to install [GitBash](https://git-scm.com/downloads).
 
-You will also need to make a [GutHub](https://github.com/) account and download a text editor of your choice.
+You will also need to make a [GitHub](https://github.com/) account and download a text editor of your choice.
 
 ### Steps
 
