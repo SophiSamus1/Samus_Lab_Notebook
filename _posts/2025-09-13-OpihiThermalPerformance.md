@@ -18,3 +18,7 @@ The purpose of this post is to have a place to put all of the curves next to eac
 **L:34.4 W:27.1 H:11.6**
 
 ![ʻOpihi 1](https://github.com/SophiSamus1/Samus_Lab_Notebook/blob/master/images/opihi1HRavg.png?raw=true)
+This is the segmented model using HRavg
+
+![ʻOpihi 1 GAM](https://github.com/SophiSamus1/Samus_Lab_Notebook/blob/master/images/opihi1HRavg-GAM.png?raw=true)
+This is the segmented model with a GAM on top. The purple line is the max point of GAM.
