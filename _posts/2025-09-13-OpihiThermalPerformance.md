@@ -2,6 +2,7 @@
 layout: post
 title: Update on ʻopihi thermal performace curves
 date: '2025-09-13'
+tags: [ Thermal Performance ]
 ---
 
 A brief explanation:
