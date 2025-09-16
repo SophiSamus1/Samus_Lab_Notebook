@@ -34,9 +34,9 @@ The purpose of this post is to have a place to put all of the curves next to eac
 
 ### Still a little messy, letʻs see what it looks like just averaged every minute, not over sliding window.
 
-https://github.com/SophiSamus1/Samus_Lab_Notebook/blob/master/images/opihi1_1minavgnoSW.png
+![1 min avg](https://github.com/SophiSamus1/Samus_Lab_Notebook/blob/master/images/opihi1_1minavgnoSW.png?raw=true)
 ^normal, not ABT, 1 min average vs raw
 
-https://github.com/SophiSamus1/Samus_Lab_Notebook/blob/master/images/opihi1allABT.png
+![all ABT](https://github.com/SophiSamus1/Samus_Lab_Notebook/blob/master/images/opihi1allABT.png?raw=true)
 ^this is all ABT for opihi 1 (normal, SW, 1 min avg)
 
