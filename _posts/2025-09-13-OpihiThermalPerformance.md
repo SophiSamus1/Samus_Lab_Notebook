@@ -31,3 +31,12 @@ The purpose of this post is to have a place to put all of the curves next to eac
 
 ![ʻOpihi ABT 1 min sliding window vs normal](https://github.com/SophiSamus1/Samus_Lab_Notebook/blob/master/images/ABTnormalvsslidingwindow.png?raw=true)
 ^This is ABT normal vs 1 min average sliding window
+
+### Still a little messy, letʻs see what it looks like just averaged every minute, not over sliding window.
+
+https://github.com/SophiSamus1/Samus_Lab_Notebook/blob/master/images/opihi1_1minavgnoSW.png
+^normal, not ABT, 1 min average vs raw
+
+https://github.com/SophiSamus1/Samus_Lab_Notebook/blob/master/images/opihi1allABT.png
+^this is all ABT for opihi 1 (normal, SW, 1 min avg)
+
