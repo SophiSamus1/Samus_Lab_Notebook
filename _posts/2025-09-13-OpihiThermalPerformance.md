@@ -57,23 +57,31 @@ The purpose of this post is to have a place to put all of the curves next to eac
 **Treatment: thermal**
 **L:34.1, W:27.8, H:12.1**
 
+There was a problem during this trial: the temp probe came out for an extended period of time and left a hole in the data. This trial is likely unusable but I should come back to it.
+
 ![ʻOpihi2 ABT original](https://github.com/SophiSamus1/Samus_Lab_Notebook/blob/master/images/opihi2ABT.png?raw=true)
-This is ABT figures for HR_10, HRavg, HRspec
+* Segmented models with ABT for HRavg, HR_10, and HRspec
+* All ABTs are 39 ºC (39.34-39.6)
 
 Now add smoothing GAM to get max
 ![ʻOpihi 2 ABT and GAM](https://github.com/SophiSamus1/Samus_Lab_Notebook/blob/master/images/opihi2ABTplusGAM.png?raw=true)
-ABT+GAM for all 3, HRavg, HRspec, HR_10
-GAM BP only within 95% CI of ABT for HR_10. HRsec and HRavg GAM BP is 37 ºC, HR_10 GAM BP is 38 ºC, ABTs are 39 ºC
+* Segmented models with ABT plus GAM (blue) for all 3, HRavg, HRspec, HR_10
+* The max point of GAM is in purple
+* GAM BP is much lower than ABT and only within 95% CI of ABT for HR_10. HRsec and HRavg GAM BP is 37 ºC, HR_10 GAM BP is 38 ºC, ABTs are 39 ºC
 
 ![ʻOpihi2 SW](https://github.com/SophiSamus1/Samus_Lab_Notebook/blob/master/images/opihi2SWvsnot.png?raw=true)
-^this is SW vs not for all 3
+* HR averaged over 1 min sliding window (left) vs raw (right)
 
 ![ʻOpihi2 ABT SW](https://github.com/SophiSamus1/Samus_Lab_Notebook/blob/master/images/opihi2ABT_SW.png?raw=true)
-ABT SW vs not
+* Segmented models with ABTs for raw (top) vs 1 min sliding window (bottom)
+* Only ABT that didnʻt change is HR_10, the reset decreased after applying 1 min averages over sliding window
 
 ![ʻOpihi2 1 min avg, no SW](https://github.com/SophiSamus1/Samus_Lab_Notebook/blob/master/images/opihi21minavg_noSW.png?raw=true)
-1 min avg for all 3, no sw vs raw
+* 1 min avg, no sliding window (left) vs raw (right)
 
 ![ʻOpihi2 all ABT](https://github.com/SophiSamus1/Samus_Lab_Notebook/blob/master/images/opihi2allABT.png?raw=true)
-opihi 2 all abt
+* All segmented models with ABTs
+* ABTs for 1 min averages (bottom 3) are all 39 ºC, same as original ABTs (top row). Sliding window (middle) changes ABT.
+
+### Overall, the curves donʻt look very good and there is a lot of spread. However, with the exception of the ABTs from HR 1 minute averages over sliding window (and GAM maxes), the ABT is consistently ~39 ºC. This breakpoint temperatuer is much higher than ʻopihi 1 (thermal vs desiccation).
 
