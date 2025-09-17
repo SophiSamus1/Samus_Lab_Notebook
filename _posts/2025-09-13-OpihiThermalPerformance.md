@@ -40,3 +40,29 @@ The purpose of this post is to have a place to put all of the curves next to eac
 ![all ABT](https://github.com/SophiSamus1/Samus_Lab_Notebook/blob/master/images/opihi1allABT.png?raw=true)
 ^this is all ABT for opihi 1 (normal, SW, 1 min avg)
 
+The ABT changed from 33 ºC to 34 ºC when averaged every minute, not over sliding window.
+
+# ʻOpihi 2 - Trial on July 4, 2025
+**Treatment: thermal**
+**L:34.1, W:27.8, H:12.1**
+
+![ʻOpihi2 ABT original](https://github.com/SophiSamus1/Samus_Lab_Notebook/blob/master/images/opihi2ABT.png?raw=true)
+This is ABT figures for HR_10, HRavg, HRspec
+
+Now add smoothing GAM to get max
+![ʻOpihi 2 ABT and GAM](https://github.com/SophiSamus1/Samus_Lab_Notebook/blob/master/images/opihi2ABTplusGAM.png?raw=true)
+ABT+GAM for all 3, HRavg, HRspec, HR_10
+GAM BP only within 95% CI of ABT for HR_10. HRsec and HRavg GAM BP is 37 ºC, HR_10 GAM BP is 38 ºC, ABTs are 39 ºC
+
+![ʻOpihi2 SW](https://github.com/SophiSamus1/Samus_Lab_Notebook/blob/master/images/opihi2SWvsnot.png?raw=true)
+^this is SW vs not for all 3
+
+![ʻOpihi2 ABT SW](https://github.com/SophiSamus1/Samus_Lab_Notebook/blob/master/images/opihi2ABT_SW.png?raw=true)
+ABT SW vs not
+
+![ʻOpihi2 1 min avg, no SW](https://github.com/SophiSamus1/Samus_Lab_Notebook/blob/master/images/opihi21minavg_noSW.png?raw=true)
+1 min avg for all 3, no sw vs raw
+
+![ʻOpihi2 all ABT](https://github.com/SophiSamus1/Samus_Lab_Notebook/blob/master/images/opihi2allABT.png?raw=true)
+opihi 2 all abt
+
