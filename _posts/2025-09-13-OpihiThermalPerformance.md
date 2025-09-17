@@ -18,29 +18,40 @@ The purpose of this post is to have a place to put all of the curves next to eac
 **L:34.4 W:27.1 H:11.6**
 
 ![ʻOpihi 1](https://github.com/SophiSamus1/Samus_Lab_Notebook/blob/master/images/opihi1HRavg.png?raw=true)
-^This is the segmented model using HRavg
+* segmented model using HRavg
+* ABT = 33.96 ºC
+
 
 ![ʻOpihi 1 GAM](https://github.com/SophiSamus1/Samus_Lab_Notebook/blob/master/images/opihi1HRavg-GAM.png?raw=true)
-^This is the segmented model with a GAM on top. The purple line is the max point of GAM. The purple breakpoint is within the ABT of the segmented model and off by ~0.2 ºC.
+* This is the segmented model (red) with a GAM (blue) on top. 
+* The purple line is the max point of GAM - is within the 95% CI of ABT from the segmented model and off by ~0.2 ºC.
+* Breakpoint using GAM is 34.19 ºC
 
 ### There is still a lot of spread so letʻs try averaging HR every minute, both across a sliding window and not.
 
 ![ʻOpihi 1 min sliding window](https://github.com/SophiSamus1/Samus_Lab_Notebook/blob/master/images/opihi1slidingwindowvsraw.png?raw=true)
-^This is the normal 1 min sliding window average vs the normal raw
+* 1 minute sliding window on the left, raw data on the right
+* From top to bottom: HR_10, HRspec, HRavg
 
 
 ![ʻOpihi ABT 1 min sliding window vs normal](https://github.com/SophiSamus1/Samus_Lab_Notebook/blob/master/images/ABTnormalvsslidingwindow.png?raw=true)
-^This is ABT normal vs 1 min average sliding window
+* Original segmented models with ABT (top 3) vs 1 minute sliding window (bottom 3)
+* From left to right: HRavg, HR_10, HRspec
+* All 6 ABTs are 33 ºC (33.76 ºC - 33.97 ºC)
 
-### Still a little messy, letʻs see what it looks like just averaged every minute, not over sliding window.
+
+### Letʻs see what it looks like averaging HR every minute, NOT over a sliding window.
 
 ![1 min avg](https://github.com/SophiSamus1/Samus_Lab_Notebook/blob/master/images/opihi1_1minavgnoSW.png?raw=true)
-^normal, not ABT, 1 min average vs raw
+* 1 minute average (left) vs raw (right)
+* From top to bottom: HR_10, HRspec, HRavg
 
 ![all ABT](https://github.com/SophiSamus1/Samus_Lab_Notebook/blob/master/images/opihi1allABT.png?raw=true)
-^this is all ABT for opihi 1 (normal, SW, 1 min avg)
+* These are the segmented models with ABT for everything: raw, sliding window, 1 min averages for HRavg, HR_10, and HRspec
+* Averaging HR every minute, not across a sliding window does increase ABT slightly. From ~33.8 ºC to ~34.2 ºC
 
-The ABT changed from 33 ºC to 34 ºC when averaged every minute, not over sliding window.
+### Overall, the breakpoint temperature of ʻopihi 1 is around 33-34 ºC and generally, there is agreement among methods.
+
 
 # ʻOpihi 2 - Trial on July 4, 2025
 **Treatment: thermal**
