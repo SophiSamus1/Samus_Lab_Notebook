@@ -83,5 +83,29 @@ Now add smoothing GAM to get max
 * All segmented models with ABTs
 * ABTs for 1 min averages (bottom 3) are all 39 ºC, same as original ABTs (top row). Sliding window (middle) changes ABT.
 
-### Overall, the curves donʻt look very good and there is a lot of spread. However, with the exception of the ABTs from HR 1 minute averages over sliding window (and GAM maxes), the ABT is consistently ~39 ºC. This breakpoint temperatuer is much higher than ʻopihi 1 (thermal vs desiccation).
+### Overall, the curves donʻt look very good and there is a lot of spread. However, with the exception of the ABTs from HR 1 minute averages over sliding window (and GAM maxes), the ABT is consistently ~39 ºC. This breakpoint temperature is much higher than ʻopihi 1 (thermal vs desiccation).
+
+
+# ʻOpihi B072 - Trial on August 12, 2025
+**Treatment: desiccation**
+**L:, W:, H:**
+
+
+# ʻOpihi B074 - Trial on August 12, 2025
+**Treatment: thermal**
+**L:, W:, H:**
+
+![B074 original ABT](https://github.com/SophiSamus1/Samus_Lab_Notebook/blob/master/images/B074originalABT.png?raw=true)
+* all 3 original ABT, HRavg, HR_10, HRspec
+* spec looks crazy but at least theyʻre all 33 ºC
+
+![b074 ABT+GAM](https://github.com/SophiSamus1/Samus_Lab_Notebook/blob/master/images/B074_ABTplusGAM.png?raw=true)
+* ABT+GAM smoothing
+* obviously spec doesnt work but rest are w/in 95% CI
+
+![B074 ABT SW](https://github.com/SophiSamus1/Samus_Lab_Notebook/blob/master/images/B074_ABToriginalvsSW.png?raw=true)
+* ABT original vs SW
+
+![B074 al ABT](https://github.com/SophiSamus1/Samus_Lab_Notebook/blob/master/images/B074allABT.png?raw=true)
+* all ABT
 
