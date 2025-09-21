@@ -14,6 +14,8 @@ also need to pay attention to end of curves - is there a common cutoff temp that
 
 The purpose of this post is to have a place to put all of the curves next to each other and discuss next steps/problems/solutions for each, as well as keep track of how many are done.
 
+*just realized for sliding window, do I need to average bodytemp over 1 minute window as well? bc I havenʻt been*
+
 # ʻOpihi 1 - Trial on July 3, 2025
 **Treatment: Desiccation**
 **L:34.4 W:27.1 H:11.6**
@@ -112,18 +114,44 @@ Now add smoothing GAM to get max
 * all 3 original ABT, HRavg, HR_10, HRspec
 * spec looks crazy but at least theyʻre all 33 ºC
 
-![b074 ABT+GAM](https://github.com/SophiSamus1/Samus_Lab_Notebook/blob/master/images/B074_ABTplusGAM.png?raw=true)
+![B074 ABT+GAM](https://github.com/SophiSamus1/Samus_Lab_Notebook/blob/master/images/B074_ABTplusGAM.png?raw=true)
 * ABT+GAM smoothing
 * obviously spec doesnt work but rest are w/in 95% CI
 
 ![B074 ABT SW](https://github.com/SophiSamus1/Samus_Lab_Notebook/blob/master/images/B074_ABToriginalvsSW.png?raw=true)
 * ABT original vs SW
 
-![B074 al ABT](https://github.com/SophiSamus1/Samus_Lab_Notebook/blob/master/images/B074allABT.png?raw=true)
+![B074 all ABT](https://github.com/SophiSamus1/Samus_Lab_Notebook/blob/master/images/B074allABT.png?raw=true)
 * all ABT
 
 
 # ʻOpihi B075 - Trial on August 26, 2025
 **Treatment: thermal**
 **L:41.1, W:34.0, H:14.7**
+
+![B075 original ABT](https://github.com/SophiSamus1/Samus_Lab_Notebook/blob/master/images/B075originalABT.png?raw=true)
+* original ABTs - 1 and 2 BPs
+* wll probably benefit from smoothing and 1 minute averages
+
+![B075 Body Temp](https://github.com/SophiSamus1/Samus_Lab_Notebook/blob/master/images/B075bodytempTime.png?raw=true)
+* may need to come back to this and get rid of small section
+
+![B075 ABT+GAM 2 BP](https://github.com/SophiSamus1/Samus_Lab_Notebook/blob/master/images/B075_ABTplusGAM.png?raw=true)
+* ABT+GAM for 2 BP, may want to add figs for 1 BP too
+
+![B075 1 ABT SW](https://github.com/SophiSamus1/Samus_Lab_Notebook/blob/master/images/B075_1ABT_SW.png?raw=true)
+* 1 ABT SW vs original
+
+![B075 2 ABT SW](https://github.com/SophiSamus1/Samus_Lab_Notebook/blob/master/images/B075_2ABT_SW.png?raw=true)
+* 2 ABT SW vs original
+
+
+
+
+
+
+
+
+
+
 
