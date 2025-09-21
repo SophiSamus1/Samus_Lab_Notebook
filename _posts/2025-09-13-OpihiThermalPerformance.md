@@ -145,7 +145,7 @@ Now add smoothing GAM to get max
 ![B075 2 ABT SW](https://github.com/SophiSamus1/Samus_Lab_Notebook/blob/master/images/B075_2ABT_SW.png?raw=true)
 * 2 ABT SW vs original
 
-![B075 all ABT 1](https://github.com/SophiSamus1/Samus_Lab_Notebook/blob/master/images/B075_all1ABT.png?raw=true0
+![B075 all ABT 1](https://github.com/SophiSamus1/Samus_Lab_Notebook/blob/master/images/B075_all1ABT.png?raw=true)
 * all ABT (1 breakpoint)
 
 
