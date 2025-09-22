@@ -153,6 +153,25 @@ Now add smoothing GAM to get max
 * all ABT (2 breakpoints)
 
 
+# ʻOpihi B052 - Trial on August 28, 2025
+**Treatment: desiccation**
+**L:32.4, W:26.3, H:11.5**
+
+![B052 original ABT](https://github.com/SophiSamus1/Samus_Lab_Notebook/blob/master/images/B052originalABT.png?raw=true)
+* original ABT
+
+![B052 ABT+GAM](https://github.com/SophiSamus1/Samus_Lab_Notebook/blob/master/images/B052_ABTplusGAM.png?raw=true)
+* ABT + GAM
+
+![B052 ABT SW](https://github.com/SophiSamus1/Samus_Lab_Notebook/blob/master/images/B052_ABT_SW.png?raw=true)
+* ABT SW vs original
+
+![B052 all ABT](https://github.com/SophiSamus1/Samus_Lab_Notebook/blob/master/images/B052_allABT.png?raw=true)
+* all ABT
+
+### No ABT agreement between HRavg, HR_10, and HRspec but stays the same across original, SW, and 1 min avg
+
+
 
 
 
