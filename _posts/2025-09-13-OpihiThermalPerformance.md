@@ -172,6 +172,28 @@ Now add smoothing GAM to get max
 ### No ABT agreement between HRavg, HR_10, and HRspec but stays the same across original, SW, and 1 min avg
 
 
+# ʻOpihi B053, Trial on August 28, 2025
+**Treatment: thermal**
+**L:37.2, W:29, H:12.8**
+
+![B053 original ABT](https://github.com/SophiSamus1/Samus_Lab_Notebook/blob/master/images/B053_originalABT.png?raw=true)
+* original ABT, 1 BP and 2 BPs
+
+![B053 ABT+GAM](https://github.com/SophiSamus1/Samus_Lab_Notebook/blob/master/images/B053_ABTplusGAM_1and2BP.png?raw=true)
+* ABT+GAM, 1 and 2 BPs
+
+![B053 1 ABT SW](https://github.com/SophiSamus1/Samus_Lab_Notebook/blob/master/images/B053_1ABT_SW.png?raw=true)
+* ABT sliding window vs original, 1 breakpoint
+
+![B053 2 ABT SW](https://github.com/SophiSamus1/Samus_Lab_Notebook/blob/master/images/B053_2ABTSW.png?raw=true)
+* ABT sliding window vs original, 2 breakpoints
+
+![B053 all ABT1](https://github.com/SophiSamus1/Samus_Lab_Notebook/blob/master/images/B053_allABT_1.png?raw=true)
+* all ABT 1 breakpoint
+
+![B053 all ABT2](https://github.com/SophiSamus1/Samus_Lab_Notebook/blob/master/images/B053_allABT_2.png?raw=true)
+* all ABT 2 breakpoints
+
 
 
 
