@@ -23,11 +23,11 @@ SW = sliding window
 BP = breakpoint (not arrhenius)
 
 # ʻOpihi 1 - Trial on July 3, 2025
-## **Treatment: Desiccation**
-## **L:34.4 W:27.1 H:11.6**
+## **Treatment: Desiccation**	**L:34.4 W:27.1 H:11.6**
 
 
 ### ʻOpihi 1 ABT - original
+
 ![ʻOpihi 1 ABT](https://github.com/SophiSamus1/Samus_Lab_Notebook/blob/master/images/Opihi1_ABT_original.png?raw=true)
 * ABT of HRavg, HR_10, and HRspec with segmented model
 * HRavg ABT = 33.96 ºC
@@ -66,30 +66,38 @@ BP = breakpoint (not arrhenius)
 
 
 # ʻOpihi 2 - Trial on July 4, 2025
-**Treatment: thermal**
-**L:34.1, W:27.8, H:12.1**
+## **Treatment: thermal**	**L:34.1, W:27.8, H:12.1**
 
-There was a problem during this trial: the temp probe came out for an extended period of time and left a hole in the data. This trial is likely unusable but I should come back to it.
+*There was a problem during this trial: the temp probe came out for an extended period of time and left a hole in the data. This trial is likely unusable but I should come back to it, I think I can get rid of the hole.*
+
+
+### ʻOpihi 2 ABT - original
 
 ![ʻOpihi2 ABT original](https://github.com/SophiSamus1/Samus_Lab_Notebook/blob/master/images/opihi2ABT.png?raw=true)
 * Segmented models with ABT for HRavg, HR_10, and HRspec
 * All ABTs are 39 ºC (39.34-39.6)
+
+
+### ʻOpihi 2 ABT + GAM
 
 Now add smoothing GAM to get max
 ![ʻOpihi 2 ABT and GAM](https://github.com/SophiSamus1/Samus_Lab_Notebook/blob/master/images/opihi2ABTplusGAM.png?raw=true)
 * Segmented models with ABT plus GAM (blue) for all 3, HRavg, HRspec, HR_10
 * The max point of GAM is in purple
 * GAM BP is much lower than ABT and only within 95% CI of ABT for HR_10. HRsec and HRavg GAM BP is 37 ºC, HR_10 GAM BP is 38 ºC, ABTs are 39 ºC
+	* No agreement between GAM and ABT
 
-![ʻOpihi2 SW](https://github.com/SophiSamus1/Samus_Lab_Notebook/blob/master/images/opihi2SWvsnot.png?raw=true)
-* HR averaged over 1 min sliding window (left) vs raw (right)
+
+### Average across 1 minute sliding window
 
 ![ʻOpihi2 ABT SW](https://github.com/SophiSamus1/Samus_Lab_Notebook/blob/master/images/opihi2ABT_SW.png?raw=true)
 * Segmented models with ABTs for raw (top) vs 1 min sliding window (bottom)
 * Only ABT that didnʻt change is HR_10, the reset decreased after applying 1 min averages over sliding window
 
-![ʻOpihi2 1 min avg, no SW](https://github.com/SophiSamus1/Samus_Lab_Notebook/blob/master/images/opihi21minavg_noSW.png?raw=true)
-* 1 min avg, no sliding window (left) vs raw (right)
+*I think because HRspec is so bad, itʻs making HRavg bad bc HR_10 looks okay*
+
+
+### 1 minute averages (not over sliding window)
 
 ![ʻOpihi2 all ABT](https://github.com/SophiSamus1/Samus_Lab_Notebook/blob/master/images/opihi2allABT.png?raw=true)
 * All segmented models with ABTs
@@ -99,44 +107,86 @@ Now add smoothing GAM to get max
 
 
 # ʻOpihi B072 - Trial on August 12, 2025
-**Treatment: desiccation**
-**L:, W:, H:**
+**Treatment: desiccation**	**L:33.0, W:26.3, H:10.5**
+
+
+### B072 ABT - original
 
 ![B072 original ABT](https://github.com/SophiSamus1/Samus_Lab_Notebook/blob/master/images/B072originalABT.png?raw=true)
-* all original ABT
+* Original segmented models with ABT
+* HRavg ABT = 33.36 ºC
+* HR_10 ABT = 33.97 ºC
+* HRspec ABT = 32.52 ºC :/
+
+
+### B072 ABT + GAM
 
 ![B072 ABT+GAM](https://github.com/SophiSamus1/Samus_Lab_Notebook/blob/master/images/B072_ABTplusGAM.png?raw=true)
-* ABT+GAM
+* GAM BP is within ABT 95% CI for HRavg and HRspec, but not for HR_10
+* GAM BP and ABT agree for HR_10 and HRspec, not for HRavg
+
+*no agreement or clear path forward here*
+
+
+### Average across 1 minute sliding window
 
 ![B072 ABT SW](https://github.com/SophiSamus1/Samus_Lab_Notebook/blob/master/images/B072_ABToriginalvsSW.png?raw=true)
-* ABT SW vs original
+* complete agreement between original ABT and SW ABT
+* all SW ABT do not agree, though - HRspec still 32ºC
+
+
+### 1 minute averages (not over sliding window)
 
 ![B072 all ABT](https://github.com/SophiSamus1/Samus_Lab_Notebook/blob/master/images/B072allABT.png?raw=true)
-* all ABT
+* HR_10 is the only of the three that ABT changes 
+* averaging over 1 minute adds more variation - no agreement
+
+
+### Breakpoint temps vary from 32-34 ºC
 
 
 # ʻOpihi B074 - Trial on August 12, 2025
-**Treatment: thermal**
-**L:, W:, H:**
+**Treatment: thermal**	**L:33.0, W:26.3, H:10.5**
+
+
+### B074 ABT - original
 
 ![B074 original ABT](https://github.com/SophiSamus1/Samus_Lab_Notebook/blob/master/images/B074originalABT.png?raw=true)
-* all 3 original ABT, HRavg, HR_10, HRspec
-* spec looks crazy but at least theyʻre all 33 ºC
+* original segmented models with ABT
+* HRavg ABT = 33.3 ºC
+* HR_10 ABT = 33.59 ºC
+* HRspec ABT = 33.1 ºC
+* HRspec looks crazy but at least theyʻre all 33 ºC
+
+### B074 ABT + GAM
 
 ![B074 ABT+GAM](https://github.com/SophiSamus1/Samus_Lab_Notebook/blob/master/images/B074_ABTplusGAM.png?raw=true)
-* ABT+GAM smoothing
-* obviously spec doesnt work but rest are w/in 95% CI
+* Segmented models with ABT plus GAM smoothing
+* GAM BPs are higher (34 ºC)
+* obviously spec doesnt work but rest are within 95% CI of ABT
+
+
+### Average across 1 minute sliding window
 
 ![B074 ABT SW](https://github.com/SophiSamus1/Samus_Lab_Notebook/blob/master/images/B074_ABToriginalvsSW.png?raw=true)
-* ABT original vs SW
+* Original (top) and 1 min SW (bottom) segmented models with ABT
+* ABT stays the same  (33ºC) for all except HRspec (same problem as GAM)
+
+
+### 1 minute averages (not over sliding window)
 
 ![B074 all ABT](https://github.com/SophiSamus1/Samus_Lab_Notebook/blob/master/images/B074allABT.png?raw=true)
-* all ABT
+* Segmented models with ABT for all methods
+* HRavg ABT decreased (32 ºC) for 1 min average (no SW), stayed the same (33 ºC) for HR_10, and HRspec doesnʻt work
+
+*I wonder if added BPs to HRspec for the averages would fix the problem*
+
+
+### Good agreement from the beginning despite terrible looking curves - thereʻs so much spread even in the 1 min averages. Breakpoint temp is ~ 33 ºC.
 
 
 # ʻOpihi B075 - Trial on August 26, 2025
-**Treatment: thermal**
-**L:41.1, W:34.0, H:14.7**
+**Treatment: thermal**	**L:41.1, W:34.0, H:14.7**
 
 ![B075 original ABT](https://github.com/SophiSamus1/Samus_Lab_Notebook/blob/master/images/B075originalABT.png?raw=true)
 * original ABTs - 1 and 2 BPs
@@ -163,8 +213,7 @@ Now add smoothing GAM to get max
 
 
 # ʻOpihi B052 - Trial on August 28, 2025
-**Treatment: desiccation**
-**L:32.4, W:26.3, H:11.5**
+**Treatment: desiccation**	**L:32.4, W:26.3, H:11.5**
 
 ![B052 original ABT](https://github.com/SophiSamus1/Samus_Lab_Notebook/blob/master/images/B052originalABT.png?raw=true)
 * original ABT
@@ -182,8 +231,7 @@ Now add smoothing GAM to get max
 
 
 # ʻOpihi B053, Trial on August 28, 2025
-**Treatment: thermal**
-**L:37.2, W:29, H:12.8**
+**Treatment: thermal**	**L:37.2, W:29, H:12.8**
 
 ![B053 original ABT](https://github.com/SophiSamus1/Samus_Lab_Notebook/blob/master/images/B053_originalABT.png?raw=true)
 * original ABT, 1 BP and 2 BPs
