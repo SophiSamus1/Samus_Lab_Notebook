@@ -14,7 +14,7 @@ also need to pay attention to end of curves - is there a common cutoff temp that
 
 The purpose of this post is to have a place to put all of the curves next to each other and discuss next steps/problems/solutions for each, as well as keep track of how many are done.
 
-*just realized for sliding window, do I need to average bodytemp over 1 minute window as well? bc I havenʻt been*
+*just realized for sliding window, do I need to average bodytemp over 1 minute window as well? bc I havenʻt been --> no, this doesnʻt change anything*
 
 # ʻOpihi 1 - Trial on July 3, 2025
 **Treatment: Desiccation**
@@ -24,11 +24,17 @@ The purpose of this post is to have a place to put all of the curves next to eac
 * segmented model using HRavg
 * ABT = 33.96 ºC
 
+![ʻOpihi 1 ABT](https://github.com/SophiSamus1/Samus_Lab_Notebook/blob/master/images/Opihi1_ABT_original.png?raw=true)
+* all original ABT (HRavg, HR_10, HRspec)
+
 
 ![ʻOpihi 1 GAM](https://github.com/SophiSamus1/Samus_Lab_Notebook/blob/master/images/opihi1HRavg-GAM.png?raw=true)
 * This is the segmented model (red) with a GAM (blue) on top. 
 * The purple line is the max point of GAM - is within the 95% CI of ABT from the segmented model and off by ~0.2 ºC.
 * Breakpoint using GAM is 34.19 ºC
+
+![ʻOpihi 1 ABT+GAM](https://github.com/SophiSamus1/Samus_Lab_Notebook/blob/master/images/Opihi1_allABTplusGAM.png?raw=true)
+* all ABT+GAM
 
 ### There is still a lot of spread so letʻs try averaging HR every minute, both across a sliding window and not.
 
