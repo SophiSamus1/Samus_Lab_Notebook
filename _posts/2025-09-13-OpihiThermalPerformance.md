@@ -188,68 +188,154 @@ Now add smoothing GAM to get max
 # ʻOpihi B075 - Trial on August 26, 2025
 **Treatment: thermal**	**L:41.1, W:34.0, H:14.7**
 
+
+### B075 ABT - original
+
 ![B075 original ABT](https://github.com/SophiSamus1/Samus_Lab_Notebook/blob/master/images/B075originalABT.png?raw=true)
-* original ABTs - 1 and 2 BPs
+* original segmented models with ABTs - top is 1 BP and bottom is 2 BPs
+	* with 1 BP, HRspec is the only correct one. And with 2 BPs, the first is never the correct one.
+	* the only reason itʻs identifying a BP at low temps is because of the weird spread 
 * wll probably benefit from smoothing and 1 minute averages
+* with 2 ABTs, the second:
+	* HRavg: 37.86 ºC
+	* HR_10: 37.56 ºC
+	* HRspec: 38.07 ºC
+* The ABT of HRspec with only 1 BP is 37.88 ºC 
+
+*note: some of the names in the captions are wrong. this is B075*
+
+
+### Note about body temp
 
 ![B075 Body Temp](https://github.com/SophiSamus1/Samus_Lab_Notebook/blob/master/images/B075bodytempTime.png?raw=true)
-* may need to come back to this and get rid of small section
+* This is bodytemp through time
+* There is a small section with unusually high body temps, I could remove them and this might help
+
+*come back to this*
+
+
+### B075 ABT + GAM
 
 ![B075 ABT+GAM 2 BP](https://github.com/SophiSamus1/Samus_Lab_Notebook/blob/master/images/B075_ABTplusGAM.png?raw=true)
-* ABT+GAM for 2 BP, may want to add figs for 1 BP too
+* Segmented models with ABT (2 BP) and GAM
+	* may want to add figs for 1 BP too
+* GAM BPs consistently 36 ºC and almost (just outside for some) within 95% CI of ABT
+
+
+### Average across 1 minute sliding window
 
 ![B075 1 ABT SW](https://github.com/SophiSamus1/Samus_Lab_Notebook/blob/master/images/B075_1ABT_SW.png?raw=true)
-* 1 ABT SW vs original
+* Segmented models with 1 ABT, original (top) and average 1 min SW (bottom)
+* the SW fixes HRavg! ABT = 37.39 ºC
+	* with 2 ABTs, HRavg is 37.86 ºC
 
 ![B075 2 ABT SW](https://github.com/SophiSamus1/Samus_Lab_Notebook/blob/master/images/B075_2ABT_SW.png?raw=true)
-* 2 ABT SW vs original
+* Segmented models with 2 ABTs, original (top) and average 1 min SW (bottom)
+* Now, all ABTs but original HRspec are 37.XX ºC
+
+
+### 1 minute averages (not over sliding window)
 
 ![B075 all ABT 1](https://github.com/SophiSamus1/Samus_Lab_Notebook/blob/master/images/B075_all1ABT.png?raw=true)
-* all ABT (1 breakpoint)
+* Segmented models with 1 ABT for all methods (original, SW, 1 min avg)
+* 1 min averages (no SW) doesnʻt fix anything with only 1 ABT
 
 
 ![B075 all ABT 2](https://github.com/SophiSamus1/Samus_Lab_Notebook/blob/master/images/B075_all2ABT.png?raw=true)
-* all ABT (2 breakpoints)
+* Segmented models with 2 ABTs for all methods (original, SW, 1 min avg)
+* all ABTs are 37.XX ºC except for original HRspec and 1 min avg HRspec (38 ºC, but only barely)
+
+### General agreement around 37 ºC
 
 
 # ʻOpihi B052 - Trial on August 28, 2025
 **Treatment: desiccation**	**L:32.4, W:26.3, H:11.5**
 
+### B052 ABT - original
+
 ![B052 original ABT](https://github.com/SophiSamus1/Samus_Lab_Notebook/blob/master/images/B052originalABT.png?raw=true)
-* original ABT
+* original segmented models with ABT
+* HRavg = 30.53 ºC
+* HR_10 = 32.65 ºC
+* HRspec = 29.5 ºC
+* No agreement :/
+
+*forgot to put HRavg, HR_10 and HRspec in figure titles*
+
+
+### B052 ABT + GAM
 
 ![B052 ABT+GAM](https://github.com/SophiSamus1/Samus_Lab_Notebook/blob/master/images/B052_ABTplusGAM.png?raw=true)
 * ABT + GAM
+* GAM BP within (or almost) 95% CI of ABT for all
+* No agreement among GAM BPs (31, 33, 30)
+
+
+### Average across 1 minute sliding window
 
 ![B052 ABT SW](https://github.com/SophiSamus1/Samus_Lab_Notebook/blob/master/images/B052_ABT_SW.png?raw=true)
-* ABT SW vs original
+* Segmented model with ABT, original (top) and SW (bottom)
+* SW matches original, no agreement among HRavg, 10, and spec
+
+
+### 1 minute averages (not over sliding window)
 
 ![B052 all ABT](https://github.com/SophiSamus1/Samus_Lab_Notebook/blob/master/images/B052_allABT.png?raw=true)
 * all ABT
+* still no agreement among avg, 10, and spec
+* ABT same among original, SW, and 1 min avg
 
-### No ABT agreement between HRavg, HR_10, and HRspec but stays the same across original, SW, and 1 min avg
+
+### No ABT agreement between HRavg, HR_10, and HRspec but stays the same across original, SW, and 1 min avg. ABT ranges from 29-32 ºC
 
 
 # ʻOpihi B053, Trial on August 28, 2025
 **Treatment: thermal**	**L:37.2, W:29, H:12.8**
 
+### B075 ABT - original
+
 ![B053 original ABT](https://github.com/SophiSamus1/Samus_Lab_Notebook/blob/master/images/B053_originalABT.png?raw=true)
 * original ABT, 1 BP and 2 BPs
+* these curves look much better than the rest
+* 2 BPs seems to fit better
+* ABTs variable with only 1 ABT, with 2 ABTs all are 37 ºC (2nd BP)
+
+
+### B075 ABT + GAM
 
 ![B053 ABT+GAM](https://github.com/SophiSamus1/Samus_Lab_Notebook/blob/master/images/B053_ABTplusGAM_1and2BP.png?raw=true)
 * ABT+GAM, 1 and 2 BPs
+* GAM BPs generally outside of ABT 95% CI
+* BPs either 36 or 37 ºC
+
+
+### Average across 1 minute sliding window
 
 ![B053 1 ABT SW](https://github.com/SophiSamus1/Samus_Lab_Notebook/blob/master/images/B053_1ABT_SW.png?raw=true)
 * ABT sliding window vs original, 1 breakpoint
+* same as original, no total agreement
 
 ![B053 2 ABT SW](https://github.com/SophiSamus1/Samus_Lab_Notebook/blob/master/images/B053_2ABTSW.png?raw=true)
 * ABT sliding window vs original, 2 breakpoints
+* with 2 BPs, the SW ABT of HR_10 changes to 36 ºC
+
+*this one might benefit from some cutoff towards the end*
+
+
+### 1 minute averages (not over sliding window)
 
 ![B053 all ABT1](https://github.com/SophiSamus1/Samus_Lab_Notebook/blob/master/images/B053_allABT_1.png?raw=true)
 * all ABT 1 breakpoint
+* ABTs match among methods (original, SW, 1 min avg), but not measurements (avg, 10, spec)
 
 ![B053 all ABT2](https://github.com/SophiSamus1/Samus_Lab_Notebook/blob/master/images/B053_allABT_2.png?raw=true)
 * all ABT 2 breakpoints
+* the only ones that are not 37 ºC are SW (36.51 ºC) and 1 min avg for HR_10 (36.99 ºC)
+
+### There is agreement among originals with 2 ABT (37 ºC) but changes a little with averages.
+
+
+# In total: 7 ʻopihi (trails, curves), 4 thermal, 3 desiccation. Thermal ABTs: 37 ºC, 37 ºC, 39 ºC, 33 ºC. Desiccation ABTs: 33-34 ºC, 32-34 ºC, 29-32 ºC. ABTs of thermal treatment ʻopihi are generally much higher (greater heat tolerance when wet). Desiccation group ʻopihi may also be more difficult to get ABT (less agreement, more difficult curves).
 
 
 
