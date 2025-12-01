@@ -341,6 +341,38 @@ Now add smoothing GAM to get max
 
 
 
+NOTES:
+-try 30 sec or 1 min average
+-matt likes sliding window
+-arbitrRy interval changing the answer - there is something in the interval choice
+	-if averge every 30 sec, could get more variance between averages
+
+double check july 4 with gap - SW  across gap? should I do two separate sliding windows?
+
+ask keith about the spread - natural variation? is there a reason some curves look so much worse than others?
+
+look at starting curves exactly at 25 body temp - does it matter that they acclimate at the same temperature or reach the same equilibrium temp ?
+look at body temp vs time curves - add these to the post
+
+how muh effort to continue to do picoscope and normal counts
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
