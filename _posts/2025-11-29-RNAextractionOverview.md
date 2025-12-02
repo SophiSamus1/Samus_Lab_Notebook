@@ -118,7 +118,8 @@ Schnytzer, Y., Simon-Blecher, N., Li, J. et al. Tidal and diel orchestration of 
 * *Patella ulyssiponensis* 44.63 million total reads, 6.74 Gb (base count total)
 	* mRNA libraries, concentration of 2.8 nM, diluted to 150 pM for loading. NovaSeq 6000  generated 150 bp PE reads
 	* https://pmc.ncbi.nlm.nih.gov/articles/PMC12405849/#T1
-* three pooled samples each of embryos from four different adult females (6 total samples) on two lanes of Illumina HiSeq = 290,359,312 raw reads, 60,765,730 high quality reads for assembly
+* marine snail *Crepidula navicella* https://onlinelibrary.wiley.com/doi/abs/10.1002/jez.b.22674
+	* three pooled samples each of embryos from four different adult females (6 total samples) on two lanes of Illumina HiSeq = 290,359,312 raw reads, 60,765,730 high quality reads for assembly
 	* 290,359,312 / 6 = 48,393,218.7 reads per sample
 
 
