@@ -49,44 +49,44 @@ tags: [ RNA, Extraction ]
 ![concentration hist](https://github.com/SophiSamus1/Samus_Lab_Notebook/blob/master/images/RNAconcentrationHist.png?raw=true)
 
 ## Control
-| tube | sample | date extracted | 	treatment	 | concentration (ng/ul) |keep?|
-| ---- | ------ | -------------- | 	---------	 | --------------------- |-----|
-| 1    | B047   | 11/4/25        | control   	 | 11.1                  | yes |
-| 15   | B037	| 11/17/25 		 | control   	 | 66.8                  | yes |
-| 17   | B043	| 11/17/25 		 | control   	 | 24.2                  | yes |
-| 18   | B033	| 11/17/25 		 | control   	 | too high              | yes |
-| 21   | B039	| 11/17/25 		 | control   	 | 29.2                  | yes |
-| 4    | B025   | 11/4/25        | control   	 | too low               |  no |
-| 9    | B048	| 11/17/25 		 | control   	 | 28                    | yes |
-| 11   | B031	| 11/17/25 		 | control   	 | 2.64                  |maybe|
+| tube | sample | date extracted | 	treatment	 | concentration (ng/ul) | keep? |
+| ---- | ------ | -------------- | 	---------	 | --------------------- | ----- |
+| 1    | B047   | 11/4/25        | control   	 | 11.1                  | yes   |
+| 15   | B037	| 11/17/25 		 | control   	 | 66.8                  | yes   |
+| 17   | B043	| 11/17/25 		 | control   	 | 24.2                  | yes   |
+| 18   | B033	| 11/17/25 		 | control   	 | too high              | yes   |
+| 21   | B039	| 11/17/25 		 | control   	 | 29.2                  | yes   |
+| 4    | B025   | 11/4/25        | control   	 | too low               |  no   |
+| 9    | B048	| 11/17/25 		 | control   	 | 28                    | yes   |
+| 11   | B031	| 11/17/25 		 | control   	 | 2.64                  | maybe |
 
 ### 6 yes, 1 no, 1 maybe
 
 ## Thermal
-| tube | sample | date extracted | 	treatment	 | concentration (ng/ul) |keep?|
-| ---- | ------ | -------------- | 	---------	 | --------------------- |-----|
-| 12   | B045	| 11/17/25 		 | thermal   	 | 36.0                  | yes |
-| 14   | B030	| 11/17/25 		 | thermal   	 | 3.68                  |maybe|
-| 16   | B050	| 11/17/25 		 | thermal   	 | 36.8                  | yes |
-| 22   | B042	| 11/17/25 		 | thermal   	 | 90.8                  | yes |
-| 7    | B040   | 11/4/25        | thermal   	 | 13.5                  | yes |
-| 2    | B064   | 11/4/25        | thermal   	 | 6.36                  | yes |
-| 3    | B024   | 11/4/25        | thermal   	 | 1.34                  |maybe|
-| 5    | B034   | 11/4/25        | thermal   	 | 8.76	                 | yes |
+| tube | sample | date extracted | 	treatment	 | concentration (ng/ul) | keep? |
+| ---- | ------ | -------------- | 	---------	 | --------------------- | ----- |
+| 12   | B045	| 11/17/25 		 | thermal   	 | 36.0                  | yes   |
+| 14   | B030	| 11/17/25 		 | thermal   	 | 3.68                  | maybe |
+| 16   | B050	| 11/17/25 		 | thermal   	 | 36.8                  | yes   |
+| 22   | B042	| 11/17/25 		 | thermal   	 | 90.8                  | yes   |
+| 7    | B040   | 11/4/25        | thermal   	 | 13.5                  | yes   |
+| 2    | B064   | 11/4/25        | thermal   	 | 6.36                  | yes   |
+| 3    | B024   | 11/4/25        | thermal   	 | 1.34                  | maybe |
+| 5    | B034   | 11/4/25        | thermal   	 | 8.76	                 | yes   |
 
 ### 6 yes, 2 maybe
 
 ## Desiccation
-| tube | sample | date extracted | 	treatment	 | concentration (ng/ul) |keep?|
-| ---- | ------ | -------------- | 	---------	 | --------------------- |-----|
-| 23   | B063	| 11/17/25 		 |desiccation	 | too high              | yes |
-| 24   | B026	| 11/17/25 		 |desiccation	 | 50.8                  | yes |
-| 19   | B032	| 11/17/25 		 |desiccation	 | 38.0                  | yes |
-| 20   | B049	| 11/17/25 		 |desiccation	 | 81.2                  | yes |
-| 13   | B046	| 11/17/25 		 |desiccation	 | 81.8                  | yes |
-| 10   | B044	| 11/17/25 		 |desiccation	 | 65.6                  | yes |
-| 6    | B038   | 11/4/25        |desiccation	 | 27.2                  | yes |
-| 8    | B041   | 11/4/25        |desiccation	 | 3.34                  |  no |
+| tube | sample | date extracted | 	treatment	 | concentration (ng/ul) | keep? |
+| ---- | ------ | -------------- | 	---------	 | --------------------- | ----- |
+| 23   | B063	| 11/17/25 		 |desiccation	 | too high              | yes   |
+| 24   | B026	| 11/17/25 		 |desiccation	 | 50.8                  | yes   |
+| 19   | B032	| 11/17/25 		 |desiccation	 | 38.0                  | yes   |
+| 20   | B049	| 11/17/25 		 |desiccation	 | 81.2                  | yes   |
+| 13   | B046	| 11/17/25 		 |desiccation	 | 81.8                  | yes   |
+| 10   | B044	| 11/17/25 		 |desiccation	 | 65.6                  | yes   |
+| 6    | B038   | 11/4/25        |desiccation	 | 27.2                  | yes   |
+| 8    | B041   | 11/4/25        |desiccation	 | 3.34                  |  no   |
 
 ### 7 yes, 1 no
 
