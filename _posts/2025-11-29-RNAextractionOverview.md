@@ -49,6 +49,7 @@ tags: [ RNA, Extraction ]
 ![concentration hist](https://github.com/SophiSamus1/Samus_Lab_Notebook/blob/master/images/RNAconcentrationHist.png?raw=true)
 
 ## Control
+
 | tube | sample | date extracted | 	treatment	 | concentration (ng/ul) | keep? |
 | ---- | ------ | -------------- | 	---------	 | --------------------- | ----- |
 | 1    | B047   | 11/4/25        | control   	 | 11.1                  | yes   |
@@ -63,6 +64,7 @@ tags: [ RNA, Extraction ]
 ### 6 yes, 1 no, 1 maybe
 
 ## Thermal
+
 | tube | sample | date extracted | 	treatment	 | concentration (ng/ul) | keep? |
 | ---- | ------ | -------------- | 	---------	 | --------------------- | ----- |
 | 12   | B045	| 11/17/25 		 | thermal   	 | 36.0                  | yes   |
@@ -77,6 +79,7 @@ tags: [ RNA, Extraction ]
 ### 6 yes, 2 maybe
 
 ## Desiccation
+
 | tube | sample | date extracted | 	treatment	 | concentration (ng/ul) | keep? |
 | ---- | ------ | -------------- | 	---------	 | --------------------- | ----- |
 | 23   | B063	| 11/17/25 		 |desiccation	 | too high              | yes   |
