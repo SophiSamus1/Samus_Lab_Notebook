@@ -91,6 +91,11 @@ tags: [ RNA, Extraction ]
 ### 7 yes, 1 no
 
 
+If we use samples 1,2,5,6,7,9,10,12,13,15,16,17,18,20,21,22,23,24: 
+
+![small hist](https://github.com/SophiSamus1/Samus_Lab_Notebook/blob/master/images/smallhist.png?raw=true)
+
+![small boxplot](https://github.com/SophiSamus1/Samus_Lab_Notebook/blob/master/images/smallboxplot.png?raw=true)
 
 
 
