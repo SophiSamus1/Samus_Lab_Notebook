@@ -104,6 +104,25 @@ Maybe do all libraries and QC then decide before seq?
 
 
 
+# Notes on limpet genomes/transcriptomes
+
+* *Patella caerula* genome > 700 Mp, ~24,000 protein coding genes
+	* https://doi.org/10.1093/gbe/evae070
+* *Cellana rota* RNAseq - 24 sampling points x 5 limpets = 120 samples
+	* total of 311,558,569 raw equencing reads / 120 = 2,596,321.41 reads per sample
+	* after trimming and QC = 108,167,257 paired-end high quality reads used for trinity assembly
+Schnytzer, Y., Simon-Blecher, N., Li, J. et al. Tidal and diel orchestration of behaviour and gene expression in an intertidal mollusc. Sci Rep 8, 4917 (2018). https://doi.org/10.1038/s41598-018-23167-y
+* deep sea limpet *Bathyacmaea lactea* 
+	* 27,674 transcripts from 648,458,172 reads from 7 individuals = 92,636,881.7 reads per individual
+	* https://www.cell.com/iscience/fulltext/S2589-0042(22)00362-5
+* *Patella ulyssiponensis* 44.63 million total reads, 6.74 Gb (base count total)
+	* mRNA libraries, concentration of 2.8 nM, diluted to 150 pM for loading. NovaSeq 6000  generated 150 bp PE reads
+	* https://pmc.ncbi.nlm.nih.gov/articles/PMC12405849/#T1
+* three pooled samples each of embryos from four different adult females (6 total samples) on two lanes of Illumina HiSeq = 290,359,312 raw reads, 60,765,730 high quality reads for assembly
+	* 290,359,312 / 6 = 48,393,218.7 reads per sample
+
+
+
 
 
 
