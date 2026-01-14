@@ -55,8 +55,8 @@ _I'm assuming low quality samples are not worth it_
 | B037	 | control   	 | no - good 	  | no - good	  | no			| 1410		 	 |
 | B033	 | control   	 | no - good 	  | no - good	  | no			| 3175		 	 |
 
-_7 control__
-_could get rid of B031, even 6 - 3 low conc. 3 high conc._
+* _7 control_
+* _could get rid of B031, even 6 - 3 low conc. 3 high conc._
 
 | sample | 	treatment	 | < 500 ng input | < 50 ng input | low quality | Max Input (ng) |
 | ------ | ------------- | -------------- | ------------- | ----------- | -------------- |
@@ -68,9 +68,9 @@ _could get rid of B031, even 6 - 3 low conc. 3 high conc._
 | B050	 | thermal   	 | no - good 	  | no - good	  | no			| 1025		 	 |
 | B042	 | thermal   	 | no - good 	  | no - good	  | no			| 2850		 	 |
 
-_7 thermal_
-_could get rid of one (B064 I guess?) and do the same as with control - 6 total: 3 low, 3 high conc._
-_or could seq all to have most data possible just in case and separate 64,30,34,40 into low pool and 45,50,42 into high pool._
+* _7 thermal_
+* _could get rid of one (B064 I guess?) and do the same as with control - 6 total: 3 low, 3 high conc._
+* _or could seq all to have most data possible just in case and separate 64,30,34,40 into low pool and 45,50,42 into high pool._
 
 | sample | 	treatment	 | < 500 ng input | < 50 ng input | low quality | Max Input (ng) |
 | ------ | ------------- | -------------- | ------------- | ----------- | -------------- |
@@ -82,9 +82,9 @@ _or could seq all to have most data possible just in case and separate 64,30,34,
 | B063	 | desiccation	 | no - good 	  | no - good	  | no			| 2550 		 	 |
 | B046	 | desiccation	 | no - good 	  | no - good	  | no			| 2700		 	 |
 
-_7 desiccation_
-_this group is difficult because all have relatively high concentrations. There is not a need for two pools. Does this pose an issue for design if we this were the only group to not be separated into two pools?_
-_we could still split into two pools: 32,26,38 in low conc. and 49,44,63,46 in high ?_
+* _7 desiccation_
+* _this group is difficult because all have relatively high concentrations. There is not a need for two pools. Does this pose an issue for design if we this were the only group to not be separated into two pools?_
+* _we could still split into two pools: 32,26,38 in low conc. and 49,44,63,46 in high ?_
 
 
 
