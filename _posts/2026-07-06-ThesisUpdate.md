@@ -5,6 +5,16 @@ date: '2026-07-06'
 tags: [ ʻopihi, RNAseq, Thermal Performance ]
 ---
 
+This post holds the results of my thesis project as of July 6, 2026. The project is split up into three sections: field surveys, gene expression analysis, and thermal performance which will be separated into their own notebook entries and linked below. As a reminder, the goal of my project is to determine the cellular mechanisms of ʻopihi in response to extreme thermal and desiccation stress through differential gene expression analysis, and to determine how or if shell morphology affects gene expression and thermal tolerance. To do so, I performed stress trials in situ with 24 ʻopihi split into three treatments: thermal, desiccation, and control (8 ʻopihi per treatment). Desiccation and thermal stress group ʻopihi were transplanted high in the intertidal, away from the splash zone. Thermal stress group ʻopihi were kept in direct sunlight and splashed once following transplantation while desiccation group ʻopihi were shaded and kept completely dry. To account for handling effects and to compare differential expression, control group ʻopihi were transplanted back to where they were found in the intertidal. 
+
+![stress trial](https://github.com/SophiSamus1/Samus_Lab_Notebook/blob/master/images/ThesisUpdate/stresstrial.png?raw=true)
+
+See [here]() for results from the in situ stress trials.
+
+See [here]() for differential gene expression analysis results.
+
+See [here]() for results of thermal performance trials. 
+
 
 Before creating Cellana exarata transcriptome, I performed a preliminary differential gene expression analysis using a Cellana radiata reference. These are the results.
 
