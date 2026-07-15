@@ -11,7 +11,7 @@ This post holds the results of my thesis project as of July 6, 2026. The project
 
 See [here]() for results from the in situ stress trials.
 
-See [here](https://github.com/SophiSamus1/Samus_Lab_Notebook/blob/master/_posts/2026-07-06-OpihiGeneExpressionResults.md) for differential gene expression analysis results.
+See [here](https://sophisamus1.github.io/Samus_Lab_Notebook/OpihiGeneExpressionResults/) for differential gene expression analysis results.
 
 See [here]() for results of thermal performance trials. 
 
