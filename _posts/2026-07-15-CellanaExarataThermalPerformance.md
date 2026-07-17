@@ -28,4 +28,3 @@ tags: [ ʻopihi, Thermal Performance ]
 ## Breakpoint temperatures of four ʻopihi across height index
 ![ABT thermal](https://github.com/SophiSamus1/Samus_Lab_Notebook/blob/master/images/ThesisUpdate/ABTthermalPLUSdistCrust.png?raw=true)
 
-Basically, no effect of height or dist crust
