@@ -38,9 +38,9 @@ $TRINITY_HOME/Trinity --seqType fq --max_memory 200G \
 ```
 Trinity_trim3 job ran for 1-02:40:30
 
-### Assembly Quality Assessment
+# Assembly Quality Assessment
 
-# Assessing Read Content
+### Assessing Read Content
 
 Build bowtie2 index for the transcriptome:
 ```
@@ -119,8 +119,10 @@ Output:
 From [Trinity](https://github.com/trinityrnaseq/trinityrnaseq/wiki/RNA-Seq-Read-Representation-by-Trinity-Assembly): A typical Trinity transcriptome assembly will have the vast majority of all reads mapping back to the assembly, and ~70-80% of the mapped fragments found mapped as proper pairs (yielding concordant alignments 1 or more times to the reconstructed transcriptome). Note, if you see high rates of duplication, usually this is not a cause for concern. Highly expressed transcripts with alternatively spliced isoforms will account for multiple read mappings. Later, abundance estimation (transcript expression quantification) takes these multiple mappings into account.
 
 
-# Visualize read support using [IGV](http://software.broadinstitute.org/software/igv/):
+### Visualize read support using [IGV](http://software.broadinstitute.org/software/igv/):
 
+
+Sort alignments by coordinate:
 ```
 
 #!/bin/bash
@@ -142,6 +144,7 @@ samtools sort bowtie2_t3.bam -o bowtie2_t3.coordSorted.bam
 
 ```
 
+Index coordinate-sorted bam file:
 ```
 
 #!/bin/bash
@@ -165,6 +168,7 @@ samtools index /work/birdlab/ssamus/bowtie2_t3.coordSorted.bam
 
 ```
 
+Index Trinity.fasta file
 ```
 
 #!/bin/bash
@@ -187,7 +191,7 @@ samtools faidx /work/birdlab/ssamus/TrinityOut_trim3.Trinity.fasta
 ```
 Resultant bowtie2_t3.coordSorted.bam files can be loaded in IGV and viewed.
 
-To identify protein coding regions within transcripts, use [TransDecoder](https://github.com/TransDecoder/TransDecoder/wiki). See [here]() for my code.
+To identify protein coding regions within transcripts, use [TransDecoder](https://github.com/TransDecoder/TransDecoder/wiki). See [here]() for my code.   
 To estimate transcript abundance, use [RSEM](https://deweylab.github.io/RSEM/). See [here]() for my code.
 
 
