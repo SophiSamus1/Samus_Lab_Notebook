@@ -5,7 +5,7 @@ date: '2026-07-06'
 tags: [ ʻopihi, RNAseq, DGE ]
 ---
 
-reference: TrinityOut_trim3.Trinity.fasta
+reference: [TrinityOut_trim3.Trinity.fasta](https://sophisamus1.github.io/Samus_Lab_Notebook/TrinityAssembly/)
 
 531270 transcripts
 
