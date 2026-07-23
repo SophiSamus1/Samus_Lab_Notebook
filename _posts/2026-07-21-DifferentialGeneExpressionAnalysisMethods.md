@@ -41,7 +41,7 @@ library(factoextra)
 
 The output of RSEM are genes.results files with transcript counts in TPM and FPKM. These are used to create a round count matrix.   
 
-```{r import results files}
+```
 
 B026 <- read.table("CellanaExarataRNAseq/RSEM_trim3/B026_t3.genes.results", header = T, sep = "\t")
 #write.csv(B026, "CellanaExarataRNAseq/RSEM_trim3/B026_t3.genes.csv", row.names = F)
@@ -101,7 +101,8 @@ B063 <- read.table("CellanaExarataRNAseq/RSEM_trim3/B063_t3.genes.results", head
 
 combine all into one read matrix using FPKM   
 
-```{r create read count matrix-FPKM}
+```
+
 B026counts <- B026[,c(2,7)]
 B030counts <- B030[,c(2,7)]
 B033counts <- B033[,c(2,7)]
@@ -181,11 +182,13 @@ readcountsFPKM <- cbind(B026counts, B030counts, B033counts, B034counts, B037coun
                     B049counts, B050counts, B063counts)
 
 # this is the read count matrix using FPKM values!!
+
 ```
 
 combine all into one read matrix using TPM   
 
-```{r create read count matrix-TPM}
+```
+
 B026counts <- B026[,c(2,6)]
 B030counts <- B030[,c(2,6)]
 B033counts <- B033[,c(2,6)]
@@ -265,11 +268,12 @@ readcountsTPM <- cbind(B026counts, B030counts, B033counts, B034counts, B037count
                     B049counts, B050counts, B063counts)
 
 # this is the read count matrix using TPM values!!
+
 ```
 
 import file with associated metadata (treatment, temperature, etc. See [here](https://sophisamus1.github.io/Samus_Lab_Notebook/CellanaExarataStressTrials/))   
 
-```{r metadata}
+```
 
 CEmetadata <- read.csv("DGE/CEmetadata.csv")
 View(CEmetadata)
@@ -280,7 +284,7 @@ CEmetadata <- column_to_rownames(CEmetadata, loc = "sample")
 
 DDS Variance stabilizing transformation   
 
-```{r dds and VST}
+```
 
 dds <- DESeqDataSetFromMatrix(countData = round(readcountsFPKM),
                               colData = CEmetadata,
@@ -307,7 +311,7 @@ top500.VST <- as.matrix(top500.VST) # has to be matrix for heatmap.2
 
 create heatmaps to visualize clustering (see [here](https://sophisamus1.github.io/Samus_Lab_Notebook/OpihiGeneExpressionResults/) for results)   
 
-```{r heatmaps}
+```
 
 palette.g <- hcl.colors(100, palette = "RdBu")
 
@@ -329,7 +333,7 @@ heatmap.2(top500.VST, trace = "none",
 
 PCA (see results [here](https://sophisamus1.github.io/Samus_Lab_Notebook/OpihiGeneExpressionResults/))   
 
-```{r PCA}
+```
 
 pca <- prcomp(t(top500.VST))
 scores <- pca$x
@@ -367,7 +371,7 @@ fviz_eig(pca) # scree plot
 There are three treatments: thermal, desiccation, and control. I can only compare two at a time.   
 
 Here is how I compared gene expression between thermal and control groups:   
-```{r DGE analysis - thermal:control}
+```
 
 #reminder, dds <- DESeqDataSetFromMatrix(countData = round(readcounts), colData = CEmetadata, design = ~treatment)
 
@@ -414,7 +418,7 @@ abline(v = 0, col = "black", lwd = 2, lty = 2)
 *see volcano plot results [here](https://sophisamus1.github.io/Samus_Lab_Notebook/OpihiGeneExpressionResults/)*    
 
 Here is how I compared gene expression between desiccation and control groups:   
-```{r DGE analysis - desiccation:control}
+```
 
 #reminder, dds <- DESeqDataSetFromMatrix(countData = round(readcounts), colData = CEmetadata, design = ~treatment)
 
@@ -461,7 +465,7 @@ abline(v = 0, col = "black", lwd = 2, lty = 2)
 *see volcano plot results [here](https://sophisamus1.github.io/Samus_Lab_Notebook/OpihiGeneExpressionResults/)*   
 
 Here is how I compared gene expression between desiccation and thermal groups:    
-```{r DGE analysis - desiccation:thermal}
+```
 
 #reminder, dds <- DESeqDataSetFromMatrix(countData = round(readcounts), colData = CEmetadata, design = ~treatment)
 
