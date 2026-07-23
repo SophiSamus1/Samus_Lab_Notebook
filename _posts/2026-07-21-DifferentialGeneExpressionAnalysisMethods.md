@@ -5,7 +5,7 @@ date: '2026-07-06'
 tags: [ ʻopihi, Gene Expression, R, DGE ]
 ---
 
-Differential gene expression analysis requires the following R packages:
+Differential gene expression analysis requires the following R packages:    
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE)
 
@@ -34,9 +34,10 @@ library(edgeR)
 
 library(gplots)
 library(factoextra)
+
 ```
 
-The output of RSEM are genes.results files with transcript counts in TPM and FPKM. These are used to create a round count matrix.
+The output of RSEM are genes.results files with transcript counts in TPM and FPKM. These are used to create a round count matrix.   
 
 ```{r import results files}
 
@@ -96,7 +97,7 @@ B063 <- read.table("CellanaExarataRNAseq/RSEM_trim3/B063_t3.genes.results", head
 
 ```
 
-combine all into one read matrix using FPKM
+combine all into one read matrix using FPKM   
 
 ```{r create read count matrix-FPKM}
 B026counts <- B026[,c(2,7)]
@@ -180,7 +181,7 @@ readcountsFPKM <- cbind(B026counts, B030counts, B033counts, B034counts, B037coun
 # this is the read count matrix using FPKM values!!
 ```
 
-combine all into one read matrix using TPM
+combine all into one read matrix using TPM   
 
 ```{r create read count matrix-TPM}
 B026counts <- B026[,c(2,6)]
@@ -264,7 +265,7 @@ readcountsTPM <- cbind(B026counts, B030counts, B033counts, B034counts, B037count
 # this is the read count matrix using TPM values!!
 ```
 
-import file with associated metadata (treatment, temperature, etc. See [here](https://sophisamus1.github.io/Samus_Lab_Notebook/CellanaExarataStressTrials/))
+import file with associated metadata (treatment, temperature, etc. See [here](https://sophisamus1.github.io/Samus_Lab_Notebook/CellanaExarataStressTrials/))   
 
 ```{r metadata}
 
@@ -275,7 +276,7 @@ CEmetadata <- column_to_rownames(CEmetadata, loc = "sample")
 
 ```
 
-Differential Gene Expression Analysis
+DDS Variance stabilizing transformation   
 
 ```{r dds and VST}
 
@@ -302,7 +303,7 @@ top500.VST <- as.matrix(top500.VST) # has to be matrix for heatmap.2
 
 ```
 
-create heatmaps to visualize clustering (see [here](https://sophisamus1.github.io/Samus_Lab_Notebook/OpihiGeneExpressionResults/) for results)
+create heatmaps to visualize clustering (see [here](https://sophisamus1.github.io/Samus_Lab_Notebook/OpihiGeneExpressionResults/) for results)   
 
 ```{r heatmaps}
 
@@ -324,7 +325,7 @@ heatmap.2(top500.VST, trace = "none",
 
 ```
 
-PCA (see results [here](https://sophisamus1.github.io/Samus_Lab_Notebook/OpihiGeneExpressionResults/))
+PCA (see results [here](https://sophisamus1.github.io/Samus_Lab_Notebook/OpihiGeneExpressionResults/))   
 
 ```{r PCA}
 
@@ -359,11 +360,11 @@ fviz_eig(pca) # scree plot
 
 ```
 
-### Differential Gene Expression Analysis
+### Differential Gene Expression Analysis   
 
-There are three treatments: thermal, desiccation, and control. I can only compare two at a time.
+There are three treatments: thermal, desiccation, and control. I can only compare two at a time.   
 
-Here is how I compared gene expression between thermal and control groups:
+Here is how I compared gene expression between thermal and control groups:   
 ```{r DGE analysis - thermal:control}
 
 #reminder, dds <- DESeqDataSetFromMatrix(countData = round(readcounts), colData = CEmetadata, design = ~treatment)
@@ -408,9 +409,9 @@ abline(v = 0, col = "black", lwd = 2, lty = 2)
 # bottom right = upregulated, not significant
 
 ```
-*see volcano plot results [here](https://sophisamus1.github.io/Samus_Lab_Notebook/OpihiGeneExpressionResults/)*
+*see volcano plot results [here](https://sophisamus1.github.io/Samus_Lab_Notebook/OpihiGeneExpressionResults/)*    
 
-Here is how I compared gene expression between desiccation and control groups:
+Here is how I compared gene expression between desiccation and control groups:   
 ```{r DGE analysis - desiccation:control}
 
 #reminder, dds <- DESeqDataSetFromMatrix(countData = round(readcounts), colData = CEmetadata, design = ~treatment)
@@ -455,9 +456,9 @@ abline(v = 0, col = "black", lwd = 2, lty = 2)
 # bottom right = upregulated, not significant
 
 ```
-*see volcano plot results [here](https://sophisamus1.github.io/Samus_Lab_Notebook/OpihiGeneExpressionResults/)*
+*see volcano plot results [here](https://sophisamus1.github.io/Samus_Lab_Notebook/OpihiGeneExpressionResults/)*   
 
-Here is how I compared gene expression between desiccation and thermal groups:
+Here is how I compared gene expression between desiccation and thermal groups:    
 ```{r DGE analysis - desiccation:thermal}
 
 #reminder, dds <- DESeqDataSetFromMatrix(countData = round(readcounts), colData = CEmetadata, design = ~treatment)
@@ -502,7 +503,7 @@ abline(v = 0, col = "black", lwd = 2, lty = 2)
 # bottom right = upregulated, not significant
 
 ```
-*see volcano plot results [here](https://sophisamus1.github.io/Samus_Lab_Notebook/OpihiGeneExpressionResults/)*
+*see volcano plot results [here](https://sophisamus1.github.io/Samus_Lab_Notebook/OpihiGeneExpressionResults/)*    
 
 
 

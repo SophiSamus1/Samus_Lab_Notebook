@@ -5,7 +5,9 @@ date: '2026-07-06'
 tags: [ ʻopihi, RNAseq, DGE ]
 ---
 
-reference: [TrinityOut_trim3.Trinity.fasta](https://sophisamus1.github.io/Samus_Lab_Notebook/TrinityAssembly/)
+reference: [TrinityOut_trim3.Trinity.fasta](https://sophisamus1.github.io/Samus_Lab_Notebook/TrinityAssembly/)    
+
+Find the code to make the figures below [here](https://sophisamus1.github.io/Samus_Lab_Notebook/DifferentialGeneExpressionAnalysisMethods/).   
 
 531270 transcripts
 

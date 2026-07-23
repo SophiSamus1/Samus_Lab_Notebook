@@ -191,7 +191,7 @@ samtools faidx /work/birdlab/ssamus/TrinityOut_trim3.Trinity.fasta
 ```
 Resultant bowtie2_t3.coordSorted.bam files can be loaded in IGV and viewed.
 
-To identify protein coding regions within transcripts, use [TransDecoder](https://github.com/TransDecoder/TransDecoder/wiki). See [here]() for my code.   
+To identify protein coding regions, use [TransDecoder](https://github.com/TransDecoder/TransDecoder/wiki). See [here]() for my code.   
 To estimate transcript abundance, use [RSEM](https://deweylab.github.io/RSEM/). See [here]() for my code.
 
 
