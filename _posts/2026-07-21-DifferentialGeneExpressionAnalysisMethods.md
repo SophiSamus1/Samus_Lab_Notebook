@@ -5,8 +5,10 @@ date: '2026-07-06'
 tags: [ ʻopihi, Gene Expression, R, DGE ]
 ---
 
-Differential gene expression analysis requires the following R packages:    
-```{r setup, include=FALSE}
+Differential gene expression analysis requires the following R packages:   
+ 
+```
+
 knitr::opts_chunk$set(echo = TRUE)
 
 library(dplyr)
