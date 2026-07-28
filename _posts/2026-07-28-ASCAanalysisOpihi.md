@@ -53,7 +53,7 @@ ASCA (ANOVA Simultaneous Component Analysis) is a multivariate approach that com
 <details>
 <summary>How do I dropdown?</summary>
 <br>
-This is how you dropdown.   
+This is how you dropdown.\ 
 
 *Does this work
 </details>
@@ -62,17 +62,17 @@ This is how you dropdown.
 <details>
 
 <summary>Tips for collapsed sections</summary>
+<br>
+### You can add a header\
 
-### You can add a header
+You can add text within a collapsed section.\
 
-You can add text within a collapsed section.
-
-You can add an image or a code block, too.
+You can add an image or a code block, too.\
 
 ```ruby
    puts "Hello World"
 ```
-
+<br>
 * but why cant I add bullet points
 
 </details>
