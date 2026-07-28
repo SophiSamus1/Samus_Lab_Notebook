@@ -44,8 +44,16 @@ ASCA (ANOVA Simultaneous Component Analysis) is a multivariate approach that com
 	- common significance testing involves resampling methods like bootstrap and permutation     
 		- bootstrapping substitutes samples with repetitions of others in the same dataset and allows you to determine the significance of the whole model and confidence intervals for scores and loading parameters which help determine with response variables are significant     
 		- permutation tests randomly permute the factor levels and recalculate the level-mean differences every time. This creates a null distribution to compare to the real model     
-	
+		
 
+</details>
+
+
+
+<details>
+<summary>How do I dropdown?</summary>
+<br>
+This is how you dropdown.
 </details>
 
 
