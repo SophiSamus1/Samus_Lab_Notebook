@@ -53,9 +53,9 @@ ASCA (ANOVA Simultaneous Component Analysis) is a multivariate approach that com
 <details>
 <summary>How do I dropdown?</summary>
 <br>
-This is how you dropdown.
+This is how you dropdown.   
 
-* Does this work
+*Does this work
 </details>
 
 
@@ -89,6 +89,7 @@ This is how you dropdown.
 
 	
 	
-[Nueda et al., 2007](https://doi.org/10.1093/bioinformatics/btm251) uses ASCA for microarray experiments
+[Nueda et al., 2007](https://doi.org/10.1093/bioinformatics/btm251) uses ASCA for microarray experiments.   
+
 
 
