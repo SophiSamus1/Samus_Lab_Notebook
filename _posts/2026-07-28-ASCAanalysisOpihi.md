@@ -59,6 +59,25 @@ This is how you dropdown.
 </details>
 
 
+<details>
+
+<summary>Tips for collapsed sections</summary>
+
+### You can add a header
+
+You can add text within a collapsed section.
+
+You can add an image or a code block, too.
+
+```ruby
+   puts "Hello World"
+```
+
+* but why cant I add bullet points
+
+</details>
+
+
 * Simple example: how do three temperatures, two catalysts affect the yield of the two final products
 	* in my RNAseq experiment, the same would be: how do three treatments (control, thermal, desiccation) and shell morphology (could be split into discrete groups but can I use continuous variable for this analysis?) affect gene expression?
 	* ASCA would answer the following questions:
